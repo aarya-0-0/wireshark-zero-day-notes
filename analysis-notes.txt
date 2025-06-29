@@ -1,0 +1,22 @@
+Wireshark Analysis - Zero-Day Recon Project 
+
+DNS Analysis:
+
+- Captured standard A (IPv4) and AAAA(IPv6) queries.
+-Domain resolved: testphp.vulnweb.com, neverssl.com.
+-No suspicious or malicious data captured.
+
+
+HTTP Analysis:
+
+-GET / HTTP 1.1 observed/
+-Response: HTTP 200 OK, Content-Type: text/html
+-Proves HTML delievered unencrypted: vulnerable to MITM injection
+-No login/password data captured
+
+
+Tools Used:
+
+-Wireshark
+-Browser(to visit test sites)
+-GitHub for publishing results
